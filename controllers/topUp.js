@@ -8,7 +8,7 @@ exports.topUp = async function(req,res){
         if (result != null){
             res.status(200).send(result)
         }else {
-            res.status(400).send({ error: "Cannot Top Up Now"})
+            res.status(400).send({ error: "Error, cannot Top Up Now"})
         }
    
     }catch(e){

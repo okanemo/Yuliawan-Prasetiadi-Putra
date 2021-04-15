@@ -8,7 +8,7 @@ exports.updateTotalBalance = async function(req,res){
         if (!isNaN(result)){
             res.status(200).send({ NAB: result })
         }else {
-            res.status(400).send({ error: "Cannot update Balance Now"})
+            res.status(400).send({ error: "Error Cannot update Balance"})
         }
    
     }catch(e){

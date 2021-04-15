@@ -8,7 +8,7 @@ exports.member = async function(req,res){
         if (result != null){
             res.status(200).send(result)
         }else {
-            res.status(409).send({ error: "Cannot Get member data now"})
+            res.status(400).send({ error: "Error cannot Get member data"})
         }
    
     }catch(e){

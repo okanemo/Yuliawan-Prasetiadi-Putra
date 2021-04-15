@@ -8,7 +8,7 @@ exports.listNAB = async function(req,res){
        if (result != null){
         res.status(200).send(result)
     }else {
-        res.status(400).send({ error: "Failed to get data NAB"})
+        res.status(500).send({ error: "Failed to get data NAB"})
     }
     }catch(e){
         console.log(e)
